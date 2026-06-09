@@ -113,6 +113,8 @@ public class Collections {
         System.out.println("la lista ha" + usersList.size() + "elementi");
 
         //prova rottura codice ( scoprire se si da l indice che indice ti dà la lista
+
+
         User[] listaUtenti = new User[5];
 
         User alessia = new User("Alessia", "Alice");
@@ -127,10 +129,13 @@ public class Collections {
         listaUtenti[4] = emanuela;
         listaUtenti[3] = riccardo;
 
-        ArrayList<User> userList4 = new ArrayList<>(Arrays.asList(listaUtenti));
-        System.out.println(userList4);
+        usersList = new ArrayList<>();
+        usersList.add(aldo);
+        usersList.addAll(Arrays.asList(listaUtenti));
+        System.out.println(" ************QUesta è la lista di prova***********");
+        System.out.println(usersList);
 
-        int indice = userList4.indexOf(emanuela);
+        int indice = usersList.indexOf(emanuela);
         System.out.println(indice);
 
         // ********************** LINKED LIST *************************
