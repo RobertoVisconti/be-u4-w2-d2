@@ -33,9 +33,9 @@ public class Rubrica {
 
     // 3 Ricerca persona tramite numero
     public void cercaPersona(int telefono) {
-        for (Map.Entry<String, Integer> entry : contatti.entrySet()) {
-            if (entry.getValue().equals(telefono)) {
-                System.out.println("Contatto trovato, il nome della persona è: " + entry.getKey());
+        for (Map.Entry<String, Integer> contatto : contatti.entrySet()) {
+            if (contatto.getValue().equals(telefono)) {
+                System.out.println("Contatto trovato, il nome della persona è: " + contatto.getKey());
                 return;
             }
         }
@@ -57,8 +57,8 @@ public class Rubrica {
         if (contatti.isEmpty()) {
             System.out.println("L'elenco della rubrica è vuoto.");
         } else {
-            for (Map.Entry<String, Integer> entry : contatti.entrySet()) {
-                System.out.println("Nome: " + entry.getKey() + " | Telefono: " + entry.getValue());
+            for (Map.Entry<String, Integer> contatto : contatti.entrySet()) {
+                System.out.println("Nome: " + contatto.getKey() + " | Telefono: " + contatto.getValue());
             }
         }
     }
