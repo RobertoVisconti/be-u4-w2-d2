@@ -14,7 +14,7 @@ public class Main {
         nuovaRubrica.cercaPersona(329876545);// si trova in rubrica
         nuovaRubrica.cercaPersona(329876542);// non si trova in rubrica
 
-        nuovaRubrica.cercaNumero("Antonio");
+        nuovaRubrica.cercaNumero("Alessia");
 
         nuovaRubrica.stampaRubrica();
 

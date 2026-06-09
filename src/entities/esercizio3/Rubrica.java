@@ -58,7 +58,7 @@ public class Rubrica {
             System.out.println("L'elenco della rubrica è vuoto.");
         } else {
             for (Map.Entry<String, Integer> contatto : contatti.entrySet()) {
-                System.out.println("Nome: " + contatto.getKey() + " | Telefono: " + contatto.getValue());
+                System.out.println("Nome: " + contatto.getKey() + " | Numero di telefono: " + contatto.getValue());
             }
         }
     }
